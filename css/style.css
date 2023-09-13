@@ -28,3 +28,163 @@
   list-style: none;
   text-decoration: none;
 }
+
+.page-introduction {
+  background: linear-gradient(
+    to right,
+    var(--gradient-very-light-red),
+    var(--gradient-light-red)
+  );
+  font-family: var(--ff-overpass);
+  border: none;
+  border-radius: 0 0 0 100px;
+}
+
+.introduction-bg-image {
+  background-image: url("../public/bg-pattern-intro-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.5rem 0 3rem 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.logo {
+  margin: 0 1rem 0 0;
+}
+
+.logo-navigation,
+.header-list {
+  display: flex;
+  align-items: center;
+  transition: 0.25s;
+  gap: 3rem;
+}
+
+.header-list-item {
+  font-size: var(--main-fs);
+  font-weight: var(--fw-bold);
+  color: var(--neutral-white);
+  cursor: pointer;
+}
+
+.header-button {
+  padding: 1rem 2rem;
+  font-weight: var(--fw-bold);
+  font-size: var(--main-fs);
+  border: none;
+  border-radius: 30px;
+  transition: 0.25s;
+}
+
+.login {
+  color: var(--neutral-white);
+}
+
+.sign {
+  color: var(--primary-light-red);
+  background: var(--neutral-white);
+}
+
+.introduction-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.main-title {
+  font-size: calc(3 * var(--main-fs));
+  color: var(--neutral-white);
+}
+
+.introduction-paragraph {
+  margin: 1rem 0 2.5rem;
+  font-size: calc(1.15 * var(--main-fs));
+  font-weight: var(--fw-thin);
+  color: var(--neutral-white);
+}
+
+.intro-button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro-button {
+  padding: 1rem 2rem;
+  font-weight: var(--fw-bold);
+  font-size: var(--main-fs);
+  border-radius: 30px;
+  transition: 0.25s;
+}
+
+.start {
+  color: var(--primary-light-red);
+  background: var(--neutral-white);
+}
+
+.learn {
+  color: var(--neutral-white);
+  border: 1px solid var(--neutral-white);
+}
+
+.editor-section {
+  width: 80%;
+  margin: 8rem auto 0;
+}
+
+.editor-introduction {
+  display: flex;
+  align-items: center;
+}
+
+.editor-main-title {
+  text-align: center;
+  font-size: calc(2.25 * var(--main-fs));
+  font-family: var(--ff-overpass);
+  color: var(--neutral-very-dark-black-blue);
+}
+
+.editor-about {
+  font-size: var(--main-fs);
+  line-height: 1.75;
+  width: 44%;
+}
+
+.editor-about h3 {
+  font-size: calc(1.5 * var(--main-fs));
+  font-family: var(--ff-overpass);
+  color: var(--neutral-very-dark-black-blue);
+}
+
+.editor-about p {
+  margin: 1rem 0 4rem;
+  font-family: var(--ff-overpass);
+}
+
+.editor-about p:last-child {
+  margin: 1rem 0 0;
+}
+
+.editor-image-box {
+  position: relative;
+  left: 8rem;
+  width: 56%;
+}
+
+.infrastructure-section {
+  display: flex;
+  align-items: center;
+  background: var(--neutral-very-dark-black-blue);
+  border: none;
+  border-radius: 0 100px 0 100px;
+  margin: 1.5rem 0;
+}

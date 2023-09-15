@@ -33,6 +33,69 @@ body {
   overflow-x: hidden;
 }
 
+.hamburguer-menu {
+  display: none;
+}
+
+.container {
+  background: #fff;
+  padding: 1rem;
+  height: 80vh;
+  margin: 0 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container a {
+  display: block !important;
+}
+
+.mobile-navigation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+  gap: 0.5rem;
+  font-size: calc(var(--main-fs) * 1.5);
+}
+
+.mobile-navigation-item a {
+  color: var(--neutral-very-dark-black-blue);
+  font-weight: var(--fw-bold);
+}
+
+.dropdown-content {
+  display: block;
+}
+
+.border-div {
+  margin: 2rem 0 1rem;
+  border: 1px solid var(--neutral-grayish-blue);
+}
+
+.menu-button {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 50%;
+  font-size: calc(var(--main-fs) * 1.35);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.mobile-menu-login {
+  color: var(--neutral-very-dark-black-blue);
+}
+
+.mobile-menu-sign {
+  background: linear-gradient(
+    to right,
+    var(--gradient-very-light-red),
+    var(--gradient-light-red)
+  );
+  color: #fff;
+  border-radius: 30px;
+}
+
 .page-introduction {
   background: linear-gradient(
     to right,
@@ -365,6 +428,10 @@ footer {
 
   .header-button {
     display: none;
+  }
+
+  .hamburguer-menu {
+    display: block;
   }
 
   .introduction-section {

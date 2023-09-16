@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -41,9 +40,15 @@
           <ul class="mobile-navigation">
             <li class="mobile-navigation-item">
               <a href="#">Product</a>
-              <img src="/icon-arrow-dark.svg" alt="Arrow icon" />
+              <button
+                type="button"
+                class="mobile-nav-toggle"
+                id="product-toggle"
+              >
+                <img src="/icon-arrow-dark.svg" alt="Arrow icon" />
+              </button>
             </li>
-            <li class="dropdown-content">
+            <li class="dropdown-content hide" id="product-dropdown">
               <a href="#">Overview</a>
               <a href="#">Pricing</a>
               <a href="#">Marketplace</a>
@@ -52,9 +57,15 @@
             </li>
             <li class="mobile-navigation-item">
               <a href="#">Company</a>
-              <img src="/icon-arrow-dark.svg" alt="Arrow icon" />
+              <button
+                type="button"
+                class="mobile-nav-toggle"
+                id="company-toggle"
+              >
+                <img src="/icon-arrow-dark.svg" alt="Arrow icon" />
+              </button>
             </li>
-            <li class="dropdown-content">
+            <li class="dropdown-content hide" id="company-dropdown">
               <a href="#">About</a>
               <a href="#">Team</a>
               <a href="#">Blog</a>
@@ -62,9 +73,15 @@
             </li>
             <li class="mobile-navigation-item">
               <a href="#">Connect</a>
-              <img src="/icon-arrow-dark.svg" alt="Arrow icon" />
+              <button
+                type="button"
+                class="mobile-nav-toggle"
+                id="connect-toggle"
+              >
+                <img src="/icon-arrow-dark.svg" alt="Arrow icon" />
+              </button>
             </li>
-            <li class="dropdown-content">
+            <li class="dropdown-content hide" id="connect-dropdown">
               <a href="#">Contact</a>
               <a href="#">Newsletter</a>
               <a href="#">LinkedIn</a>

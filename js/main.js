@@ -3,6 +3,9 @@ const mobileNav = document.querySelector("#mobile-navigation");
 const productToggle = document.querySelector("#product-toggle");
 const companyToggle = document.querySelector("#company-toggle");
 const connectToggle = document.querySelector("#connect-toggle");
+const productArrow = document.querySelector("#product-arrow");
+const companyArrow = document.querySelector("#company-arrow");
+const connectArrow = document.querySelector("#connect-arrow");
 const productDrop = document.querySelector("#product-dropdown");
 const companyDrop = document.querySelector("#company-dropdown");
 const connectDrop = document.querySelector("#connect-dropdown");
@@ -21,22 +24,22 @@ function mobileMenuToggle() {
     : mobileNav.classList.add("hide");
 }
 
-function dropNavigation(menu, nav) {
+function dropNavigation(menu, nav, button) {
   menu.addEventListener("click", () => {
     if (nav.classList.contains("hide")) {
       nav.classList.remove("hide");
-      menu.style.rotate = "180deg";
+      button.style.rotate = "180deg";
     } else {
       nav.classList.add("hide");
-      menu.style.rotate = "0deg";
+      button.style.rotate = "0deg";
     }
   });
 }
 
 function menuDrop() {
-  dropNavigation(productToggle, productDrop);
-  dropNavigation(companyToggle, companyDrop);
-  dropNavigation(connectToggle, connectDrop);
+  dropNavigation(productToggle, productDrop, productArrow);
+  dropNavigation(companyToggle, companyDrop, companyArrow);
+  dropNavigation(connectToggle, connectDrop, connectArrow);
 }
 
 menuDrop();

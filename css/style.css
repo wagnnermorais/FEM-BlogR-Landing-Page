@@ -37,85 +37,6 @@ body {
   display: none !important;
 }
 
-.hamburguer-menu {
-  display: none;
-}
-
-.mobile-nav-container {
-  background: #fff;
-  padding: 2rem;
-  margin: 0 1rem;
-  border-radius: 8px;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.mobile-nav-container a {
-  display: block !important;
-}
-
-.mobile-navigation-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1.5rem 0;
-  gap: 0.5rem;
-  font-size: calc(var(--main-fs) * 1.5);
-}
-
-.mobile-navigation-item a {
-  color: var(--neutral-very-dark-black-blue);
-  font-weight: var(--fw-bold);
-}
-
-.mobile-nav-toggle {
-  background: transparent;
-  border: none;
-}
-
-.dropdown-content {
-  display: block;
-  padding: 1rem;
-  font-size: calc(var(--main-fs) * 1.25);
-  text-align: center;
-  background: var(--neutral-grayish-blue);
-  border: none;
-  border-radius: 8px;
-}
-
-.dropdown-content a {
-  color: var(--neutral-very-dark-black-blue);
-  font-weight: 700;
-  margin: 1rem 0;
-}
-
-.border-div {
-  margin: 2rem 0 1rem;
-  border: 1px solid var(--neutral-grayish-blue);
-}
-
-.menu-button {
-  margin: 0 auto;
-  padding: 1rem;
-  width: 50%;
-  font-size: calc(var(--main-fs) * 1.25);
-  font-weight: var(--fw-bold);
-  text-align: center;
-}
-
-.mobile-menu-login {
-  color: var(--neutral-very-dark-black-blue);
-}
-
-.mobile-menu-sign {
-  background: linear-gradient(
-    to right,
-    var(--gradient-very-light-red),
-    var(--gradient-light-red)
-  );
-  color: #fff;
-  border-radius: 30px;
-}
-
 .page-introduction {
   background: linear-gradient(
     to right,
@@ -237,6 +158,89 @@ header {
   background: var(--neutral-white);
   color: var(--primary-light-red);
 }
+
+/* Mobile menu styling -- Start */
+
+.hamburguer-menu {
+  display: none;
+}
+
+.mobile-nav-container {
+  background: #fff;
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav-container a {
+  display: block !important;
+}
+
+.mobile-navigation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+  gap: 0.5rem;
+  font-size: calc(var(--main-fs) * 1.5);
+}
+
+.mobile-navigation-item a {
+  color: var(--neutral-very-dark-black-blue);
+  font-weight: var(--fw-bold);
+}
+
+.mobile-nav-toggle {
+  background: transparent;
+  border: none;
+}
+
+.dropdown-content {
+  display: block;
+  padding: 1rem;
+  font-size: calc(var(--main-fs) * 1.25);
+  text-align: center;
+  background: var(--neutral-grayish-blue);
+  border: none;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: var(--neutral-very-dark-black-blue);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.border-div {
+  margin: 2rem 0 1rem;
+  border: 1px solid var(--neutral-grayish-blue);
+}
+
+.menu-button {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 50%;
+  font-size: calc(var(--main-fs) * 1.25);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.mobile-menu-login {
+  color: var(--neutral-very-dark-black-blue);
+}
+
+.mobile-menu-sign {
+  background: linear-gradient(
+    to right,
+    var(--gradient-very-light-red),
+    var(--gradient-light-red)
+  );
+  color: #fff;
+  border-radius: 30px;
+}
+
+/* Mobile menu styling -- END*/
 
 .editor-section {
   width: 80%;
@@ -424,18 +428,16 @@ footer {
 @media screen and (max-width: 375px) {
   .introduction-bg-image {
     background-image: url("/bg-pattern-intro-desktop.svg");
-    background-position: center;
+    background-position-y: -15.5rem;
+    background-position-x: -20rem;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2.5rem 0 3rem 0;
+    background-size: calc(100% * 3.5);
+    border-radius: 0 0 0 100px;
   }
 
   header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .logo {
@@ -486,10 +488,10 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90vw;
-    margin: 3.5rem 0 0;
+    margin: 0;
     width: 100%;
-    height: 50vh;
-    top: -66rem;
+    height: 35vh;
+    top: -62.5rem;
     right: 0;
   }
 
@@ -514,11 +516,10 @@ footer {
     background-image: url("/bg-pattern-circles.svg");
     background-position-x: center;
     background-position-y: -13rem;
-    background-size: calc(100vw * 1.6);
-    background-repeat: no-repeat;
+    background-size: calc(100vw * 1.5);
     display: block;
     margin: 0;
-    padding: 5rem 0;
+    padding: 0rem 0 5rem;
     text-align: center;
   }
 
@@ -529,7 +530,9 @@ footer {
   }
 
   .phones-image {
-    width: 30rem;
+    position: relative;
+    width: 100vw;
+    top: 3.5rem;
   }
 
   .infrastructure-about {
@@ -562,9 +565,10 @@ footer {
     background-image: url("/illustration-laptop-mobile.svg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: calc(100vw * 1.25);
     width: 100%;
     height: 50vh;
-    margin: 3.5rem 0;
+    margin: 0 auto;
     position: static;
   }
 

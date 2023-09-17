@@ -41,7 +41,7 @@ body {
   display: none;
 }
 
-.container {
+.mobile-nav-container {
   background: #fff;
   padding: 2rem;
   margin: 0 1rem;
@@ -49,7 +49,7 @@ body {
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.container a {
+.mobile-nav-container a {
   display: block !important;
 }
 
